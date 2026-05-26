@@ -144,3 +144,9 @@ class Gates:
         if not np.allclose(product, np.eye(n), atol=1e-8):
             raise ValueError("Gate matrix must be unitary (U·U† = I).")
         return mat
+
+
+def controlled_phase(theta):
+    """Controlled phase gate with angle theta."""
+    import numpy as np
+    return np.array([[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,np.exp(1j*theta)]])
