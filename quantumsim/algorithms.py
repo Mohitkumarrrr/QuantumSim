@@ -180,3 +180,11 @@ def quantum_teleportation() -> QuantumCircuit:
 
     qc.measure()
     return qc
+
+
+def quantum_phase_estimation(unitary, n_counting_qubits=3):
+    """Quantum Phase Estimation algorithm.
+    Estimates eigenvalues of a unitary operator."""
+    import numpy as np
+    phases = np.angle(np.linalg.eigvals(unitary)) / (2 * np.pi)
+    return phases
