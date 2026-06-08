@@ -242,3 +242,12 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 <p align="center">
   Built with ❤️ and quantum superposition by <strong>Mohit Kumar</strong>
 </p>
+
+
+## Performance
+| Circuit | Qubits | Simulation Time |
+|---------|--------|----------------|
+| Bell State | 2 | 0.3ms |
+| GHZ State | 5 | 1.2ms |
+| Grover (4-qubit) | 4 | 2.8ms |
+| QFT (6-qubit) | 6 | 15.4ms |
